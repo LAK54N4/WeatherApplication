@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_today">
+
+    <fragment
+        android:id="@+id/navigation_today"
+        android:name="com.laksana.weatherapplication.ui.today.CurrentForecastFragment"
+        android:label="@string/title_today"
+        tools:layout="@layout/fragment_current_forecast" />
+
+    <fragment
+        android:id="@+id/navigation_week"
+        android:name="com.laksana.weatherapplication.ui.weekly.WeeklyForecastFragment"
+        android:label="@string/title_week"
+        tools:layout="@layout/fragment_weekly_forecast" />
+
+</navigation>
